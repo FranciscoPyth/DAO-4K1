@@ -97,7 +97,7 @@ class Hiper(Sucursal):
         return self.facturacion + self.importeGanadoAlquileres
     
     def getRentabilidad(self):
-        return (self.facturacion - self.importeGanadoAlquileres) / self.superficie
+        return (self.facturacion + self.importeGanadoAlquileres) / self.superficie
 
 class Super(Sucursal):
     def __init__(self, numero, superficie, facturacion, tipoSucursal):
